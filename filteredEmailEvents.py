@@ -3,7 +3,7 @@ filtered_offset = ""
 filtered_hasMore = True
 
 while filtered_hasMore == True:
-    filtered_response = requests.get(f'https://api.hubspot.com/email/public/v1/events?limit=1000&campaignId=189798110&eventType=OPEN&portalId=6377009&offset={filtered_offset}&excludeFilteredEvents=True',auth=HubSpotAuth())
+    filtered_response = requests.get(f'https://api.hubspot.com/email/public/v1/events?limit=1000&campaignId=168079668&eventType=OPEN&portalId=4132258&offset={filtered_offset}&excludeFilteredEvents=True',auth=HubSpotAuth())
     filtered_parsed_response = filtered_response.json()
     filtered_events.extend(filtered_parsed_response["events"])
 
